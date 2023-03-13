@@ -1,0 +1,179 @@
+.portfolio {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  overflow: hidden;
+  position: relative;
+  transform: translateX(100%);
+}
+
+.portfolio .portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 50px;
+}
+.portfolio .work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio .work img {
+  width: 600px;
+  height: 300px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ea;
+}
+
+.portfolio-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: #04061e;*/
+  background-color: black;
+  z-index: 2000;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-popup .pp-content {
+  width: 70%;
+  height: 100%;
+  background-color: rgba(85, 17, 86, 0.5);
+  padding: 40px 15px;
+  border-radius: 30px;
+  margin-top: 100px;
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.pp-content .pp-header {
+  position: absolute;
+  color: #bdbdbd;
+  top: -15px;
+  right: -15px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgba(85, 17, 86, 0.61);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.pp-content .pp-header img {
+  width: 50%;
+  height: 50%;
+}
+.carousel-track-container {
+  position: relative;
+  height: 500px;
+  width: 90%;
+  margin: auto;
+}
+.carousel-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 250ms ease-in;
+}
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 1s;
+}
+.carousel-button svg {
+  width: 80%;
+  height: 80%;
+}
+.carousel-button.left {
+  left: 0;
+  transform: rotate(180deg);
+}
+.carousel-button.right {
+  right: 0;
+}
+.carousel-track-container .carousel-nav {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.carousel-nav .carousel-indicator {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid var(--main-color);
+  cursor: pointer;
+  margin: 4px;
+}
+.carousel-nav .current-slide {
+  background-color: #551156;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.is-invisible {
+  visibility: hidden;
+}
+
+@media (max-width: 676px) {
+  .portfolio .portfolio-content {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .portfolio .work img {
+    width: 300px;
+    height: 250px;
+  }
+
+  .portfolio .work img {
+    width: 380px;
+  }
+}
+@media (max-width: 992px) {
+  .carousel-track-container {
+    height: 30%;
+    width: 100%;
+  }
+  .portfolio-popup .pp-content {
+    width: 95%;
+  }
+}
+@media (max-width: 1400px) and (min-width: 992px) {
+  .portfolio .portfolio-content {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+  .portfolio .work img {
+    width: 450px;
+    height: 250px;
+  }
+}

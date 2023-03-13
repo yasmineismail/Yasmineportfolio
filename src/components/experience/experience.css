@@ -1,0 +1,69 @@
+/* Start skills */
+.skills {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  overflow: hidden;
+  position: relative;
+  transform: translateX(100%);
+}
+.skills .skills-inter {
+  display: flex;
+  align-items: center;
+  color: var(--second-color);
+  justify-content: space-between;
+}
+.skills .skills-inter .skills-details {
+  flex-basis: 49%;
+}
+
+.skills-details .experience-row {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+
+.skills-details .experience-row .experience-box {
+  flex-basis: 48%;
+  box-shadow: rgb(0 0 0) 0px 10px 30px -15px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgb(17 18 33);
+}
+
+.experience-box h3 {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.skills .skills-inter .skills-details .chart {
+  margin-bottom: 20px;
+}
+
+.skills .skills-inter .skills-details .chart span {
+  margin-bottom: 7px;
+  font-size: 18px;
+  display: block;
+}
+
+.skills .skills-inter .skills-details .chart footer {
+  background-color: black;
+  height: 2px;
+}
+.skills .skills-inter .skills-details .chart footer div {
+  height: 100%;
+  /*background-color: #08fdd8;*/
+  background-color: var(--main-color);
+}
+
+.contents .myTagCloud {
+  width: 500px !important;
+}
+/* End skills */
+@media (max-width: 992px) {
+  .skills .skills-inter {
+    flex-direction: column;
+  }
+  .contents .myTagCloud {
+    width: 350px !important;
+    padding-top: 50px;
+  }
+}
