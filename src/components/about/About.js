@@ -78,7 +78,9 @@ const About = () => {
           </div>
         </div>
       </div>
-      <SocialContact />
+      <div className="social-about">
+        <SocialContact />
+      </div>
     </>
   );
 };

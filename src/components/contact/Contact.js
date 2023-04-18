@@ -82,7 +82,9 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <SocialContact />
+      <div className="contac-social">
+        <SocialContact />
+      </div>
     </div>
   );
 };

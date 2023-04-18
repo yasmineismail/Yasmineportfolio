@@ -130,8 +130,14 @@ form .btn {
 }
 @media (max-width: 480px) {
   .sec-contact .social-contact-box {
-    left: 2%;
-    top: 40%;
+    display: none;
+  }
+  .sec-contact .contact-email-box {
+    display: none;
+  }
+  .inter-contact .content {
+    flex-basis: 100%;
+    font-size: 12px;
   }
   .contact-map img {
     display: none;
