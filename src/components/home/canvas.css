@@ -231,7 +231,12 @@ button.btn:focus {
   .landing .text-box {
     width: 300px;
     left: 10%;
+    top: 40%;
     transform: translateY(-50%);
+    line-height: 1.5;
+  }
+  .button-box {
+    top: calc(40% + 250px);
   }
   .landing .text-box h1 {
     font-size: 50px;
@@ -242,8 +247,17 @@ button.btn:focus {
   .landing .text-box h2 {
     font-size: 40px;
   }
-  .social-contact-box {
-    display: none;
+  .home .social-contact-box {
+    position: absolute;
+    top: calc(40% + 200px);
+
+    left: 10%;
+  }
+  .home .social-contact-box .socail-contact-box-links {
+    flex-direction: row;
+  }
+  .home .social-contact-box .socail-contact-box-links ul {
+    display: flex;
   }
 }
 /* End Landing */

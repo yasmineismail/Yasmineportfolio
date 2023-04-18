@@ -5,23 +5,22 @@ import Header from "../Header";
 import gsap from "gsap";
 import { Power4 } from "gsap";
 const data = [
-  { value: "jQuery", count: 25 },
+  { value: "Python", count: 25 },
   { value: "MongoDB", count: 18 },
   { value: "JavaScript", count: 38 },
-  { value: "React", count: 30 },
-  { value: "Nodejs", count: 28 },
-  { value: "Express.js", count: 25 },
+  { value: "ReactJs", count: 30 },
+
+  { value: "Bootstrap", count: 25 },
   { value: "HTML5", count: 33 },
-  { value: "CSS3", count: 20 },
-  { value: "Webpack", count: 22 },
-  { value: "Babel.js", count: 7 },
-  { value: "ECMAScript", count: 25 },
-  { value: "Jest", count: 15 },
-  { value: "Mocha", count: 17 },
-  { value: "React Native", count: 27 },
-  { value: "Angular.js", count: 30 },
-  { value: "TypeScript", count: 15 },
-  { value: "Flow", count: 30 },
+  { value: "CSS3", count: 30 },
+  { value: "Git", count: 22 },
+  { value: "Agile", count: 7 },
+  { value: "Django Rest Framework", count: 15 },
+  { value: "scrum", count: 15 },
+  { value: "Gsap.js", count: 17 },
+  { value: "Django", count: 30 },
+  { value: "PostgreSQL", count: 15 },
+  { value: "Redux", count: 30 },
   { value: "NPM", count: 11 },
 ];
 
@@ -49,44 +48,42 @@ const Experience = () => {
               <div class="experience-row">
                 <div class="experience-box">
                   <h3>Full Stack developer</h3>
-                  <span>Freelance</span>
-                  <span>2020-2021</span>
-                  <p>comptabilte socity</p>
+                  <span> 2021-2022</span>
+                  <p>Freelance</p>
                 </div>
                 <div class="experience-box">
                   <h3>Full Stack developer</h3>
-                  <span>Freelance</span>
-                  <span>2020-2021</span>
-                  <p>comptabilte socity</p>
+                  <span> 2020-2021</span>
+                  <p>ED SYNERGY</p>
                 </div>
               </div>
               <div class="chart">
                 <span>Frontend</span>
                 <footer>
-                  <div data-width="75%" style={{ width: "75%" }}></div>{" "}
+                  <div data-width="55%" style={{ width: "55%" }}></div>{" "}
                 </footer>
               </div>
               <div class="chart">
                 <span>Backend</span>
                 <footer>
                   <div
-                    data-width="75%"
-                    style={{ backgroundColor: "#08fdd8", width: "75%" }}
+                    data-width="50%"
+                    style={{ backgroundColor: "#08fdd8", width: "50%" }}
                   ></div>
                 </footer>
               </div>
               <div class="chart">
                 <span>React</span>
                 <footer>
-                  <div data-width="70%" style={{ width: "70%" }}></div>{" "}
+                  <div data-width="60%" style={{ width: "60%" }}></div>{" "}
                 </footer>
               </div>
               <div class="chart">
                 <span>Django</span>
                 <footer>
                   <div
-                    data-width="95%"
-                    style={{ backgroundColor: "#08fdd8", width: "95%" }}
+                    data-width="55%"
+                    style={{ backgroundColor: "#08fdd8", width: "55%" }}
                   ></div>
                 </footer>
               </div>

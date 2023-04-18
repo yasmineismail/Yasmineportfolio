@@ -25,9 +25,10 @@ html {
 }
 body {
   font-family: "Space Mono", monospace;
-  /*background-color: #03040f;*/
-  /*background-color: #04061e;*/
   background-color: black;
+
+  /*background-color: #03040c;*/
+  /*background-color: #04061e;*/
 }
 ul {
   list-style: none;
@@ -41,19 +42,22 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-/* Small */
+
+@media (max-width: 380px) {
+  .container {
+    width: 350px;
+  }
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
   }
 }
-/* Medium */
 @media (min-width: 992px) {
   .container {
     width: 960px;
   }
 }
-/* Large */
 @media (min-width: 1200px) {
   .container {
     width: 1140px;
@@ -79,7 +83,7 @@ a {
   height: 350px;
   border-bottom-left-radius: 500px;
 
-  position: fixed;
+  position: absolute;
   right: 0;
   z-index: 100;
   transition: ease-out 0.5s all;
@@ -175,6 +179,7 @@ a {
   left: 40px;
   right: auto;
   width: 40px;
+  z-index: 300;
 }
 
 .social-contact-box .socail-contact-box-links {
@@ -205,6 +210,7 @@ a {
   width: 40px;
   left: auto;
   writing-mode: vertical-rl;
+  z-index: 300;
 }
 .contact-email-box .contact-email-box-link {
   display: flex;

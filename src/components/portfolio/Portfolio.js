@@ -38,18 +38,22 @@ const Portfolio = () => {
           <div className="main-title">
             <h2>Portfolio</h2>
           </div>
-          <div className="portfolio-content">
-            {Data.map((ele) => {
-              const { id, image, title, description } = ele;
-              return (
+        </div>
+        <div className="portfolio-content">
+          {Data.map((ele) => {
+            const { id, image, title, description, category } = ele;
+            return (
+              <div key={id} className="work">
                 <Link to={`/work/${id}`}>
-                  <div key={id} className="work">
-                    <img src={image} alt="" />
+                  <img src={image} alt="" />
+                  <div class="caption">
+                    <h4>{title}</h4>
+                    <p>{category}</p>
                   </div>
                 </Link>
-              );
-            })}
-          </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </>

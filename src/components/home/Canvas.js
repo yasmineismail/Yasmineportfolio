@@ -42,6 +42,11 @@ const Canvas = (props) => {
       })
 
       .to("header", { opacity: 1 })
+      .fromTo(
+        ".social-contact-box",
+        { opacity: 0 },
+        { opacity: 1, duration: 1 }
+      )
       .to(".landing", { opacity: 1, duration: 1 })
       .fromTo(
         light,
@@ -155,7 +160,7 @@ const Canvas = (props) => {
     animate();
   }, []);
   return (
-    <div>
+    <div className="home">
       <div className="mobile-header">
         <Header />
       </div>
@@ -249,7 +254,9 @@ const Canvas = (props) => {
             <p>Junior React js / Django developer </p>
           </div>
           <div className="button-box">
-            <button className="btn">Contact Me</button>
+            <Link to={`/contact`}>
+              <button className="btn">Contact Me</button>
+            </Link>
           </div>
           <div className="computer">
             <svg

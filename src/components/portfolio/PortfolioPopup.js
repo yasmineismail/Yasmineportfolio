@@ -14,6 +14,8 @@ const PortfolioPopup = () => {
   const [data, setData] = useState([]);
   const [imgs, setImgs] = useState([]);
   const [lengthImgs, setLength] = useState(0);
+  const [desc, setDesc] = useState([]);
+
   const [Loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -35,7 +37,7 @@ const PortfolioPopup = () => {
   console.log(data);
 
   return (
-    <div class="portfolio-popup  popup-work2">
+    <div class="portfolio-popup">
       <div className="pp-content">
         <Link to={`/Portfolio`}>
           {" "}
@@ -64,7 +66,7 @@ const PortfolioPopup = () => {
             >
               <path
                 d="M1.854 47.707L25.561 24L1.854 0.292999L0.438995 1.707L22.732 24L0.438995 46.293L1.854 47.707Z"
-                fill="black"
+                fill="#a12ca3"
               />
             </svg>
           </div>
@@ -76,7 +78,7 @@ const PortfolioPopup = () => {
             >
               <path
                 d="M1.854 47.707L25.561 24L1.854 0.292999L0.438995 1.707L22.732 24L0.438995 46.293L1.854 47.707Z"
-                fill="black"
+                fill="#a12ca3"
               />
             </svg>
           </div>
@@ -99,8 +101,21 @@ const PortfolioPopup = () => {
             <div></div>
           </div>
         </div>
-
-        <h2>ecommerce</h2>
+        <div className="description">
+          {data.length > 0 && (
+            <>
+              <p>
+                <span>Title: </span> {data[0].title}
+              </p>
+              <p>
+                <span>Descreption:</span> {data[0].description}
+              </p>
+              <p>
+                <span>Technologies: </span> {data[0].technologies}
+              </p>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );

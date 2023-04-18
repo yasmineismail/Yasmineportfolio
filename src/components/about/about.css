@@ -19,17 +19,21 @@
   flex-basis: 60%;
   color: var(--second-color);
 }
+
+.about .container .content .inter .inbox {
+  color: var(--main-color);
+  font-weight: bold;
+}
 .about .container .content .inter .btn {
 }
 .content .image img {
   width: 200px;
   opacity: 0.8;
   border-radius: 5px;
-  /*filter: url(#svgTint);*/
 }
 
 .about .content .image:hover img {
-  filter: none;
+  filter: url(#svgTint);
 }
 .about .content .my-image {
   width: fit-content;

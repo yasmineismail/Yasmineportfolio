@@ -37,6 +37,31 @@ import contact from "../../assets/images/contact.png";
 import works from "../../assets/images/works.png";
 import personal from "../../assets/images/Personal.png";
 
+import portfHome from "../../assets/images/portofhome.png";
+import homepor from "../../assets/images/homepor.png";
+import experiencePor from "../../assets/images/experiencePor.png";
+import contactPort from "../../assets/images/contactPort.png";
+import portfolioPor from "../../assets/images/portfolioPor.png";
+import projPo from "../../assets/images/projPo.png";
+import aboutPort from "../../assets/images/aboutPort.png";
+
+import techstoreCarousel from "../../assets/images/techstoreCarousel.png";
+import techProduct from "../../assets/images/techProduct.png";
+import shoppingCart from "../../assets/images/shoppingCart.png";
+import shippingAdr from "../../assets/images/shippingAdr.png";
+import paypalCredit from "../../assets/images/paypalCredit.png";
+import placeOrder from "../../assets/images/placeOrder.png";
+import PlaceOrdpay from "../../assets/images/PlaceOrdpay.png";
+import Deliver from "../../assets/images/Deliver.png";
+import adminUsers from "../../assets/images/adminUsers.png";
+import userProfile from "../../assets/images/userProfile.png";
+import ordersAdmin from "../../assets/images/ordersAdmin.png";
+import prodAdmin from "../../assets/images/prodAdmin.png";
+import editProduct from "../../assets/images/editProduct.png";
+import SignIn from "../../assets/images/SignIn.png";
+import register from "../../assets/images/register.png";
+import review from "../../assets/images/review.png";
+
 /*const Data = [
   {
     id: 1,
@@ -114,8 +139,9 @@ import personal from "../../assets/images/Personal.png";
 const Data = [
   {
     id: 1,
-    title: "Project 1",
-    description: "This is the description of project 1.",
+    title: "Web application for an accounting firm",
+    description:
+      "web application for an accounting firm to facilitate efficient management of agents, customers, bills, and invoices",
     image: Work1,
     images: [
       Work1,
@@ -134,27 +160,82 @@ const Data = [
       SelctZones,
       selectZones,
     ],
+    technologies:
+      "Python, Javascript, Django, Reactjs, MongoDB, Django Rest Framework, Git",
+    category: "ReactJS, Django",
   },
   {
     id: 2,
-    title: "Project 2",
-    description: "This is the description of project 2.",
+    title: "E-commerce",
+    description: "An e-commerce website",
     image: HomeEc,
     images: [HomeEc, products, CartHome],
+    technologies: "Python, Javascript, Django, Bootstrap, sqlite, Git",
+    category: "Django",
   },
   {
     id: 3,
-    title: "Project 3",
-    description: "This is the description of project 3.",
+    title: "NoteList App",
+    description: "A note app allows users to create and manage digital notes.",
     image: noteapp,
     images: [noteapp, Note, newnote],
+    technologies:
+      "Python, Javascript, ReactBootstrap, Django, ReactJs, Django Rest Framework, Git",
+    category: "ReactJS, Django",
   },
   {
     id: 4,
-    title: "Project 4",
-    description: "This is the description of project 4.",
+    title: "Portfolio",
+    description:
+      "A portfolio website presents an individual's skills, provides information about them and their experience, and offers a means to get in touch with them.",
     image: Home,
     images: [Home, about, services, experience, works, personal, contact],
+    technologies: "javascript, Reactjs",
+    category: "ReactJS",
+  },
+  {
+    id: 5,
+    title: "Portfolio",
+    description:
+      "A portfolio website presents an individual's skills, provides information about them and their experience, and offers a means to get in touch with them.",
+    image: portfHome,
+    images: [
+      homepor,
+      aboutPort,
+      experiencePor,
+      portfolioPor,
+      projPo,
+      contactPort,
+    ],
+    technologies: "javascript, Reactjs, Gsap.js, Figma",
+    category: "ReactJS",
+  },
+  {
+    id: 6,
+    title: "TechStore",
+    description: "An e-commerce website",
+    image: techstoreCarousel,
+    images: [
+      techstoreCarousel,
+      techProduct,
+      review,
+      shoppingCart,
+      SignIn,
+      shippingAdr,
+      paypalCredit,
+      placeOrder,
+      PlaceOrdpay,
+      Deliver,
+      adminUsers,
+      prodAdmin,
+      editProduct,
+      userProfile,
+      register,
+      ordersAdmin,
+    ],
+    technologies:
+      "Python, Javascript, ReactJs, Django, ReactBootstrap, Redux, PostgreSQL, Django Rest Framework, Git",
+    category: "ReactJS, Django",
   },
 ];
 export default Data;

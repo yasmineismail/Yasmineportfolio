@@ -18,6 +18,15 @@ const About = () => {
       ease: Power4.easeOut,
     });
   });
+
+  const onButtonClick = () => {
+    fetch("Resume-YasmineIsmail.pdf")
+      .then((response) => response.blob())
+      .then((blob) => {
+        const fileURL = URL.createObjectURL(blob);
+        window.open(fileURL, "_blank");
+      });
+  };
   return (
     <>
       <Header />
@@ -30,14 +39,30 @@ const About = () => {
             <div className="inter">
               <p>
                 {" "}
-                I am Yasmine Ismail, Junior Full Stack web developer from
-                Tunisia, based in UAE. I have one year of experience in web
-                development, including front-end and back-end technologies and
-                I'm passionate for learning new technologies and working with
-                teams to create user-friendly web applications
+                Hi! My name is Yasmine Ismail, a Junior Full Stack web developer
+                from Tunisia, currently residing in the UAE.{" "}
+                <span className="inbox">
+                  I hold a master's degree in software engineering and have a
+                  year of experience in web development
+                </span>
+                , covering front-end and back-end technologies. I have developed
+                a strong passion for learning new technologies and collaborating
+                with teams to create user-friendly web applications. I am
+                actively searching for new opportunities and welcome any
+                inquiries you may have.{" "}
+                <span className="inbox">
+                  Please don't hesitate to reach out
+                </span>{" "}
+                if you have any questions or just want to say hello - my{" "}
+                <a href="mailto:yasmineiismail@gmail.com">
+                  <span className="inbox">inbox</span>
+                </a>{" "}
+                is always open and I would be happy to connect with you.
               </p>
 
-              <button className="btn">Resume</button>
+              <button className="btn" onClick={onButtonClick}>
+                Resume
+              </button>
             </div>
             <div className="image">
               <svg xmlns="http://www.w3.org/2000/svg">
